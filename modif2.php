@@ -1,7 +1,19 @@
 <head>
     <meta charset="UTF-8">
+    <script src="scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.dd.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="scripts/dd.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<script language="javascript">
+    $(document).ready(function(e) {
+        try {
+            $("body select").msDropDown();
+        } catch(e) {
+            alert(e.message);
+        }
+    });
+</script>
 <?php
 session_start();
 $nom=$_POST['nom'];
@@ -15,7 +27,7 @@ for ($i=0;$i<$nbstats;$i++)
 {
     echo "  <select name='typeStats$i' placeholder='Choisir stat' required>
                 <option value='' disabled selected hidden>Choisir stat</option>
-                <option>Vitalité</option>
+                <option data-image='files/intelligence.png'>Vitalité</option>
                 <option>Sagesse</option>
                 <option>Force</option>
                 <option>Intelligence</option>
