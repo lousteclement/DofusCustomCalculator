@@ -1,0 +1,268 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    background-color: hotpink;
+}
+
+.blocs_base {
+    height: 250px;
+    width: 250px;
+    background-color: darkgray;
+    margin: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: .25rem;
+    display: inline-block;
+}
+#conteneur
+{
+    text-align: center;
+}
+.blocs_base:hover .buttons {
+    display: block;
+}
+
+#wrapper {
+    margin: auto;
+    width: 1000px;
+}
+#titre {
+    animation: fade-in .3s linear;
+    color: #fff;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #5cb85c;
+    padding: 15px;
+    text-align: center;
+    background-color: #5cb85c;
+    border-radius: .25rem;
+    max-width: 250px;
+}
+
+@keyframes fade-in {
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+    
+}
+.clear {
+    clear: both;
+}
+
+#content {
+    animation: fade-in .3s linear;
+    display: none;
+    background-color: #5bc0de;
+    border-radius: .25rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #5bc0de;
+    padding: 15px;
+    text-align: center;
+}
+
+#chapeau {
+    background-image: url("files/coiffe.PNG");
+    background-size: cover;
+}
+
+#cape {
+    background-image: url("files/cape.PNG");
+    background-size: cover;
+}
+
+#amulette {
+    background-image: url("files/amulette.png");
+    background-size: cover;
+}
+
+#anneau1 {
+    background-image: url("files/anneau1.png");
+    background-size: cover;
+}
+
+#anneau2 {
+    background-image: url("files/anneau2.png");
+    background-size: cover;
+}
+
+#ceinture {
+    background-image: url("files/ceinture.PNG");
+    background-size: cover;
+}
+
+#bottes {
+    background-image: url("files/ceinture.PNG");
+    background-size: cover;
+}
+
+#familier {
+    background-image: url("files/familier.PNG");
+    background-size: cover;
+}
+
+#bouclier {
+    background-image: url("files/bouclier.png");
+    background-size: cover;
+}
+
+.buttons{
+    clear: both;
+    position: relative;
+    top: 37%;
+    padding-bottom: 15px;
+    display: none;
+}
+.buttons input
+{
+    margin-bottom: 10px;
+}
+
+.lien {
+    display: block;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #E8B960;
+    background-color: #E8B960;
+    border-radius: .25rem;
+    height: 50px;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: auto;
+}
+
+.suppr {
+    border: 1px solid #d9534f;
+    background-color: #d9534f;
+}
+
+.lien:hover {
+    cursor: pointer;
+    color: #E8B960;
+    background-color: #ffffff;
+}
+
+.select {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.select:active {
+    text-decoration: none;
+    color: black;
+}
+
+.select:focus #content {
+    display: block;
+}
+
+.select:focus #titre {
+    display: block;
+}
+.select:focus .buttons {
+    display: block;
+}
+
+.tool {
+    visibility: hidden;
+    float: right;
+}
+
+#modif1 {
+    text-align: center;
+    margin-top: 15%;
+}
+
+#modif1 #textModif1, #numberModif1 {
+    height: 50px;
+    width: 75%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#submitModif1 {
+    font-size: 13px;
+    background-color: #E8B960;
+    border: 1px solid #E8B960;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 50px;
+    width: 150px;
+}
+
+#submitModif1:hover {
+    background-color: #ffffff;
+    color: #E8B960;
+    cursor: pointer;
+}
+
+#modif2 {
+    text-align: center;
+    margin-top: 5%;
+}
+#modif2 select > option
+{
+    font-size: 16px;
+    padding: 15px;
+}
+#modif2 #titre2 {
+    margin: auto;
+    width: 75%;
+    color: #fff;
+    border: 1px solid #5cb85c;
+    padding: 15px;
+    text-align: center;
+    background-color: #5cb85c;
+    border-radius: .25rem;
+    margin-bottom: 25px;
+}
+
+#modif2 select {
+    height: 50px;
+    width: 25%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#modif2 #numberModif2 {
+    height: 50px;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#submitModif2 {
+    font-size: 13px;
+    background-color: #E8B960;
+    border: 1px solid #E8B960;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #ffffff;
+    height: 50px;
+    width: 150px;
+}
+
+#submitModif2:hover {
+    background-color: #ffffff;
+    color: #E8B960;
+    cursor: pointer;
+}
